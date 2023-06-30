@@ -39,8 +39,9 @@ Header section styles
 */
 header {
   background-color: #333;
+  /* maybe change this to grid? */
   display: flex;
-  width: 100vw;
+  width: 100%;
 }
 
 h1 {
@@ -65,8 +66,9 @@ header ul {
   margin-left: 2rem;
 
   /* width: 100%; */
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   /* display: inline-block; */
+  /* justify the text to the right */
 }
 
 header li {
@@ -135,23 +137,52 @@ main {
 
 main h2 {
   color: var(--primary-color);
-  border-right: 0.1rem solid var(--primary-color);
+  border-right: 0.25rem solid var(--primary-color);
   padding-right: 1rem;
   display: inline;
   font-size: 4rem;
-  /* width: 25%; */
+  /* justify the text to the right */
+  text-align: right;
 }
 
 .page-section {
-  width: 100vw;
+  /* width: 100vw; */
   display: grid;
   grid-template-columns: 1fr 3fr;
   margin-bottom: 1rem;
 }
 
+/* experimentation area */
+
 /* #about {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "about-heading about-card";
+}
+
+.about-heading {
+  grid-area: about-heading;
+}
+
+.about-card {
+  grid-area: about-card;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "work-heading work-card";
+}
+
+.work-heading {
+  grid-area: work-heading;
+}
+
+.work-card {
+  grid-area: work-card;
 } */
+
+/* end of experimentation area */
 
 p {
   display: inline;
@@ -257,6 +288,19 @@ Media queries
 */
 
 @media screen and (max-width: 1024px) {
+  main h2 {
+    color: var(--primary-color);
+    border-bottom: 0.25rem solid var(--primary-color);
+    border-right: none;
+    display: inline;
+    font-size: 4rem;
+    text-align: left;
+  }
+  .page-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
   .grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 175px);
