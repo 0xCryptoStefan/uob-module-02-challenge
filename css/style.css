@@ -1,6 +1,11 @@
 /* CSS styles reset - default with template */
 * {
   box-sizing: border-box;
+  --primary-color: #333;
+  --secondary-color: #ccc;
+  --tertiary-color: #27bfe5;
+  --light-color: #f4f4f4;
+  --dark-color: #333;
 }
 
 body {
@@ -26,19 +31,38 @@ p {
 }
 
 /* 
----
+
+---------------------
 Header section styles 
----
+---------------------
+
 */
 header {
   background-color: #333;
-  color: #fff;
-  padding: 0.5rem;
+  display: flex;
+  width: 100vw;
+}
+
+h1 {
+  background-color: var(--tertiary-color);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  font-size: 3rem;
+}
+
+nav {
+  width: 100%;
+  margin-right: auto;
 }
 
 header ul {
   list-style: none;
   padding: 0;
+  width: 100%;
+  justify-content: flex-end;
+  /* display: inline-block; */
 }
 
 header li {
@@ -49,10 +73,13 @@ header li {
 header li a {
   color: #fff;
   text-decoration: none;
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--tertiary-color);
 }
 
 header li a:hover {
-  color: #ccc;
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
 }
 
 .hero-banner {
@@ -64,53 +91,179 @@ header li a:hover {
   height: 300px;
 }
 
+.hero-heading-wrapper {
+  /* position this element in the bottom right corner of its parent div */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* bottom: 0;
+  right: 0;
+  padding: 1rem; */
+}
+
+.hero-heading-wrapper h2 {
+  background-color: var(--tertiary-color);
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
 /* 
----
+
+---------------------
 Main section styles 
----
+---------------------
+
 */
+
+main {
+  /* width: 100vw; */
+  padding: 1rem;
+  /* display: flex; */
+  /* grid-template-columns: 1fr 3fr; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+main h2 {
+  border-right: 0.1rem solid var(--primary-color);
+  padding-right: 1rem;
+  display: inline;
+  font-size: 4rem;
+  /* width: 25%; */
+}
+
+.page-section {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-bottom: 1rem;
+}
+
+/* #about {
+  display: inline-block;
+} */
+
+p {
+  display: inline;
+  padding: 0.5rem;
+  /* width: 75%; */
+}
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 175px);
   grid-gap: 0.5rem;
   padding: 0.5rem;
   grid-template-areas:
-    "portfolio-one portfolio-one portfolio-two"
-    "portfolio-one portfolio-one portfolio-three"
-    "portfolio-four portfolio-four portfolio-four";
+    "portfolio-one portfolio-one"
+    "portfolio-one portfolio-one"
+    "portfolio-two portfolio-three"
+    "portfolio-four portfolio-five";
 }
 
 .grid-item {
   background-color: #f4f4f4;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   text-align: center;
-  border: 1px solid #ccc;
+  border: 4px solid #27bfe5;
+  display: flex;
+}
+
+.portfolio-item-description {
+  background-color: var(--tertiary-color);
+  padding: 0.5rem;
+  align-self: flex-end;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
 }
 
 #portfolio-01 {
   grid-area: portfolio-one;
+  background-image: url("../images/02-portfolio-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #portfolio-02 {
   grid-area: portfolio-two;
+  background-image: url("../images/02-portfolio-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #portfolio-03 {
   grid-area: portfolio-three;
+  background-image: url("../images/02-portfolio-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #portfolio-04 {
   grid-area: portfolio-four;
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio-05 {
+  grid-area: portfolio-five;
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contact ul {
   list-style: none;
   padding: 0;
+  width: 100%;
 }
 
 .contact li {
   display: inline-block;
   padding: 0.5rem;
   justify-content: space-between;
+}
+
+/*
+
+---------------------
+Media queries
+---------------------
+
+*/
+
+@media screen and (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 175px);
+    grid-template-areas:
+      "portfolio-one portfolio-one"
+      "portfolio-two portfolio-three"
+      "portfolio-four portfolio-five";
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 175px);
+    grid-template-areas:
+      "portfolio-one"
+      "portfolio-two"
+      "portfolio-three"
+      "portfolio-four"
+      "portfolio-five";
+  }
+  /* #portfolio-01,
+  #portfolio-02,
+  #portfolio-03,
+  #portfolio-04,
+  #portfolio-05 {
+    grid-area: auto;
+  } */
 }
