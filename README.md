@@ -23,14 +23,14 @@ This has been developed to meet the following Acceptance Criteria:
 
 ## Learning Outcome
 
-TBC
+I used a combindation of resources in completing this challenge assignment, including taking different fragments of code and combining them to come up with a solution specific to my problem-- making the portfolio cards clickable as a link whilst maintaining accessibility for the anchor tags.
 
 ## Resources Used
 
 In completing this challenge exercise, I made use of the following resources:
 
-- [Link](item)
-- [Link](item)
+- [Stack Overflow: Make a div into a link](https://stackoverflow.com/questions/796087/make-a-div-into-a-link)
+- [Stack Overflow: Using bootstrap cards as a hyperlink](https://stackoverflow.com/questions/49554070/using-bootstrap-cards-as-a-hyperlink)
 - [Link](item)
 
 ## Mark Scheme Compliance
