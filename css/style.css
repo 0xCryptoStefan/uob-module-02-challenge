@@ -147,6 +147,12 @@ main h2 {
   text-align: right;
 }
 
+/*
+
+This section defines the grid used to display the cards providing 1fr for the headings and 3fr for the content.
+
+*/
+
 .page-section {
   /* width: 100vw; */
   display: grid;
@@ -217,7 +223,7 @@ This section defines the grid used to display the portfolio projects
 .grid-item {
   background-color: #f4f4f4;
   /* padding: 0.5rem; */
-  text-align: center;
+  /* text-align: center; */
   border: 4px solid #27bfe5;
   display: flex;
   position: relative;
@@ -227,6 +233,12 @@ This section defines the grid used to display the portfolio projects
   text-decoration: none;
   color: var(--primary-color);
 }
+
+/* 
+
+The clickable card class allows for the div to be clickable and applies an overlay to the portfolio images, which is removed on hover.
+
+*/
 
 .clickable-card::after {
   position: absolute;
@@ -249,7 +261,7 @@ This section defines the grid used to display the portfolio projects
   align-self: flex-end;
   margin-right: auto;
   margin-bottom: 0.5rem;
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 #portfolio-01 {
@@ -286,6 +298,12 @@ This section defines the grid used to display the portfolio projects
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*
+
+This section sets the styles for the contact section
+
+*/
 
 .contact ul {
   list-style: none;
