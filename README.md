@@ -1,4 +1,4 @@
-# UOB Bootcamp Challenge Assignment 1
+# UOB Bootcamp Challenge Assignment 2
 
 ## Description
 
@@ -12,18 +12,20 @@ The production website is deployed [here](https://0xcryptostefan.github.io/uob-m
 
 This has been developed to meet the following Acceptance Criteria:
 
-| Acceptance Criteria                                                                                                                               | Solution   |
-| ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you | Evidence 1 |
-| When one of the links in the navigation is clicked then the UI scrolls to the corresponding section                                               | Evidence 2 |
-| When viewing the section about your work then the section contains titled images of your applications                                             | Evidence 3 |
-| When presented with the your first application then that application's image should be larger in size than the others                             | Evidence 4 |
-| When images of the applications are clicked then the user is taken to that deployed application                                                   | Evidence 5 |
-| When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport                         | Evidence 6 |
+| Acceptance Criteria                                                                                                                               | Solution                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you | Evidence 1                                                                                             |
+| When one of the links in the navigation is clicked then the UI scrolls to the corresponding section                                               | Evidence 2                                                                                             |
+| When viewing the section about your work then the section contains titled images of your applications                                             | Evidence 3                                                                                             |
+| When presented with the your first application then that application's image should be larger in size than the others                             | Evidence 4                                                                                             |
+| When images of the applications are clicked then the user is taken to that deployed application                                                   | Evidence 5                                                                                             |
+| When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport                         | Media queries have been used to adjust the page layout with breakpoints at widths of 1024px and 768px. |
 
 ## Learning Outcome
 
 I used a combindation of resources in completing this challenge assignment, including taking different fragments of code and combining them to come up with a solution specific to my problem-- making the portfolio cards clickable as a link whilst maintaining accessibility for the anchor tags.
+
+I have learned how to apply styles in layers in order to achieve a desired effect, and also the need to tidy up styles as my codebase evolves so as to remove any potential conflicts with other styles.
 
 ## Resources Used
 
@@ -52,9 +54,9 @@ In completing this challenge exercise, I made use of the following resources:
 
 ### Application Quality
 
-| Item                                                                                    | Evidence                                                                           |
-| --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Application resembles the mock-up functionality provided in the Challenge instructions. | Application resembles the model screenshot provided in the assignment instructions |
+| Item                                                                                    | Evidence                                                                                                                                                              |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Application resembles the mock-up functionality provided in the Challenge instructions. | Application resembles the model screenshot provided in the assignment instructions, with the addition of an avatar image as specified within the acceptance criteria. |
 
 ### Repository Quality
 
