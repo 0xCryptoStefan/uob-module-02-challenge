@@ -1,4 +1,13 @@
-/* CSS styles reset - default with template */
+/*
+
+-----------------------------
+CSS styles reset and globals
+-----------------------------
+
+This section resets the box model to border box and also sets global variables for colors. The variables are used throughout the site to make it easier to change the color scheme. 
+
+*/
+
 * {
   box-sizing: border-box;
   --primary-color: #333;
@@ -218,6 +227,11 @@ p {
   left: 0;
   z-index: 1;
   content: " ";
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.clickable-card:hover::after {
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .portfolio-item-description {
@@ -226,6 +240,7 @@ p {
   align-self: flex-end;
   margin-right: auto;
   margin-bottom: 0.5rem;
+  z-index: 3;
 }
 
 #portfolio-01 {
