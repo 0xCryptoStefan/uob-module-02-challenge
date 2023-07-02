@@ -41,7 +41,7 @@ In completing this challenge exercise, I made use of the following resources:
 
 | Item                                            | Evidence                                                                   |
 | ----------------------------------------------- | -------------------------------------------------------------------------- |
-| Satisfies all of the above acceptance criteria. | The built application satsifies the acceptance criteria, as set out above. |
+| Satisfies all of the above acceptance criteria. | The built application satisfies the acceptance criteria, as set out above. |
 
 ### Deployment
 
