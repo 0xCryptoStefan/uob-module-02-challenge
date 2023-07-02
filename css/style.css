@@ -263,14 +263,14 @@ The clickable card class allows for the div to be clickable and applies an overl
 
 #portfolio-01 {
   grid-area: portfolio-one;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/stefan4d.github.io_uob-module-01-challenge.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #portfolio-02 {
   grid-area: portfolio-two;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/stefan4d.github.io_prework-study-guide.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -291,7 +291,7 @@ The clickable card class allows for the div to be clickable and applies an overl
 
 #portfolio-05 {
   grid-area: portfolio-five;
-  background-image: url("../images/02-portfolio-4.jpg");
+  background-image: url("../images/02-portfolio-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

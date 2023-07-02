@@ -8,7 +8,7 @@ This assignment took a starter code package in commit [663bfc4](https://github.c
 
 The production website is deployed [here](https://stefan4d.github.io/uob-module-02-challenge/).
 
-![Screenshot of deployed webpage](./abc.jpg)
+![Screenshot of deployed webpage](./images/deployed-app-screenshot-full-resize.png)
 
 This has been developed to meet the following Acceptance Criteria:
 
@@ -16,9 +16,9 @@ This has been developed to meet the following Acceptance Criteria:
 | ------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | When the page is loaded the page presents your name, a recent photo or avatar, and links to sections about you, your work, and how to contact you | Name included in h1 element <br /> Avatar included <br /> Links to section about me, my portfolio, and how to contact included <br /> Note: content is placeholder to protect privacy. |
 | When one of the links in the navigation is clicked then the UI scrolls to the corresponding section                                               | When links are clicked, user is taken to the associated section on the page.                                                                                                           |
-| When viewing the section about your work then the section contains titled images of your applications                                             | Evidence 3                                                                                                                                                                             |
-| When presented with the your first application then that application's image should be larger in size than the others                             | Evidence 4                                                                                                                                                                             |
-| When images of the applications are clicked then the user is taken to that deployed application                                                   | Evidence 5                                                                                                                                                                             |
+| When viewing the section about your work then the section contains titled images of your applications                                             | Grid used to display bootcamp projects so far with titles and descriptions.                                                                                                            |
+| When presented with the your first application then that application's image should be larger in size than the others                             | First item in the grid is shown larger.                                                                                                                                                |
+| When images of the applications are clicked then the user is taken to that deployed application                                                   | Images for deployed applications when clicked will take the user to the deployed application. Other links are dummy links against the placeholder items.                               |
 | When the page is resized or viewed on various screens and devices then the layout is responsive and adapts to my viewport                         | Media queries have been used to adjust the page layout with breakpoints at widths of 1024px and 768px.                                                                                 |
 
 ## Learning Outcome
@@ -33,7 +33,6 @@ In completing this challenge exercise, I made use of the following resources:
 
 - [Stack Overflow: Make a div into a link](https://stackoverflow.com/questions/796087/make-a-div-into-a-link)
 - [Stack Overflow: Using bootstrap cards as a hyperlink](https://stackoverflow.com/questions/49554070/using-bootstrap-cards-as-a-hyperlink)
-- [Link](item)
 
 ## Mark Scheme Compliance
 
